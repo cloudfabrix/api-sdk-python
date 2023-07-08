@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.http_validation_error import HTTPValidationError
+from cfx_rda_api.models.http_validation_error import HTTPValidationError
 
 # TODO update the JSON string below
 json = "{}"

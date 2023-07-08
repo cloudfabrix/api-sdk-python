@@ -1,4 +1,4 @@
-# openapi_client.DashboardsApi
+# cfx_rda_api.DashboardsApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,23 +19,23 @@ Fetch meta data for dashboards
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dashboards_enum import DashboardsEnum
-from openapi_client.models.table_report_response import TableReportResponse
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.models.dashboards_enum import DashboardsEnum
+from cfx_rda_api.models.table_report_response import TableReportResponse
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DashboardsApi(api_client)
+    api_instance = cfx_rda_api.DashboardsApi(api_client)
     cfxql_query = 'cfxql_query_example' # str | <a href='https://bot-docs.cloudfabrix.io/reference_guides/cfxql/'>cfxql query</a> string to filter the results (optional)
     search = 'search_example' # str | search across fields: ['name', 'description', 'usecase', 'category', 'version'] (optional)
     offset = 0 # int | Offset to start the results from. (optional) (default to 0)

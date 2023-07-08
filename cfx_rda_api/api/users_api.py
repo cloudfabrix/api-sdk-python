@@ -19,11 +19,11 @@ import warnings
 from pydantic import validate_arguments, ValidationError
 from typing_extensions import Annotated
 
-from openapi_client.models.user_details import UserDetails
+from cfx_rda_api.models.user_details import UserDetails
 
-from openapi_client.api_client import ApiClient
-from openapi_client.api_response import ApiResponse
-from openapi_client.exceptions import (  # noqa: F401
+from cfx_rda_api.api_client import ApiClient
+from cfx_rda_api.api_response import ApiResponse
+from cfx_rda_api.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )

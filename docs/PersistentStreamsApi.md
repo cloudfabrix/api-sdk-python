@@ -1,4 +1,4 @@
-# openapi_client.PersistentStreamsApi
+# cfx_rda_api.PersistentStreamsApi
 
 All URIs are relative to *http://localhost*
 
@@ -23,23 +23,23 @@ Add a new pstream to the system
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.pstream_add_model import PstreamAddModel
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.models.pstream_add_model import PstreamAddModel
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersistentStreamsApi(api_client)
-    pstream_add_model = openapi_client.PstreamAddModel() # PstreamAddModel | 
+    api_instance = cfx_rda_api.PersistentStreamsApi(api_client)
+    pstream_add_model = cfx_rda_api.PstreamAddModel() # PstreamAddModel | 
 
     try:
         # Add a pstream
@@ -90,21 +90,21 @@ Delete a persistent stream.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersistentStreamsApi(api_client)
+    api_instance = cfx_rda_api.PersistentStreamsApi(api_client)
     name = 'name_example' # str | Name of the pstream to be deleted
     delete_data = False # bool | Delete data as well. If data is not deleted, adding the same pstream again will add the old data back. (optional) (default to False)
 
@@ -158,24 +158,24 @@ Edit the attributes of a persistent stream
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.pstream_edit_model import PstreamEditModel
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.models.pstream_edit_model import PstreamEditModel
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersistentStreamsApi(api_client)
+    api_instance = cfx_rda_api.PersistentStreamsApi(api_client)
     name = 'name_example' # str | Name of the pstream to be edited
-    pstream_edit_model = openapi_client.PstreamEditModel() # PstreamEditModel | 
+    pstream_edit_model = cfx_rda_api.PstreamEditModel() # PstreamEditModel | 
 
     try:
         # Edit attributes of a pstream
@@ -227,22 +227,22 @@ Get data of a persistent stream
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.table_report_response import TableReportResponse
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.models.table_report_response import TableReportResponse
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersistentStreamsApi(api_client)
+    api_instance = cfx_rda_api.PersistentStreamsApi(api_client)
     name = 'name_example' # str | Name of the pstream
     cfxql_query = 'cfxql_query_example' # str | <a href='https://bot-docs.cloudfabrix.io/reference_guides/cfxql/'>cfxql query</a> string to filter the results (optional)
     search = 'search_example' # str | search across fields: ['name'] (optional)
@@ -304,23 +304,23 @@ Fetch meta data about pstreams
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.pstreams_enum import PstreamsEnum
-from openapi_client.models.table_report_response import TableReportResponse
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.models.pstreams_enum import PstreamsEnum
+from cfx_rda_api.models.table_report_response import TableReportResponse
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersistentStreamsApi(api_client)
+    api_instance = cfx_rda_api.PersistentStreamsApi(api_client)
     cfxql_query = 'cfxql_query_example' # str | <a href='https://bot-docs.cloudfabrix.io/reference_guides/cfxql/'>cfxql query</a> string to filter the results (optional)
     search = 'search_example' # str | search across fields: ['name'] (optional)
     offset = 0 # int | Offset to start the results from. (optional) (default to 0)

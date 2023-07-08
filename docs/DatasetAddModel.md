@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.dataset_add_model import DatasetAddModel
+from cfx_rda_api.models.dataset_add_model import DatasetAddModel
 
 # TODO update the JSON string below
 json = "{}"

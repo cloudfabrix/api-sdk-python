@@ -24,11 +24,11 @@ import tempfile
 
 from urllib.parse import quote
 
-from openapi_client.configuration import Configuration
-from openapi_client.api_response import ApiResponse
-import openapi_client.models
-from openapi_client import rest
-from openapi_client.exceptions import ApiValueError, ApiException
+from cfx_rda_api.configuration import Configuration
+from cfx_rda_api.api_response import ApiResponse
+import cfx_rda_api.models
+from cfx_rda_api import rest
+from cfx_rda_api.exceptions import ApiValueError, ApiException
 
 
 class ApiClient(object):
@@ -341,7 +341,7 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(openapi_client.models, klass)
+                klass = getattr(cfx_rda_api.models, klass)
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

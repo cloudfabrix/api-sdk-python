@@ -1,4 +1,4 @@
-# openapi_client.DatasetsApi
+# cfx_rda_api.DatasetsApi
 
 All URIs are relative to *http://localhost*
 
@@ -25,23 +25,23 @@ Add a dataset.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.dataset_add_model import DatasetAddModel
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.models.dataset_add_model import DatasetAddModel
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DatasetsApi(api_client)
-    dataset_add_model = openapi_client.DatasetAddModel() # DatasetAddModel | 
+    api_instance = cfx_rda_api.DatasetsApi(api_client)
+    dataset_add_model = cfx_rda_api.DatasetAddModel() # DatasetAddModel | 
 
     try:
         # Add a dataset
@@ -92,21 +92,21 @@ Delete a dataset. Please note that all the data of the dataset will be deleted a
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DatasetsApi(api_client)
+    api_instance = cfx_rda_api.DatasetsApi(api_client)
     name = 'name_example' # str | Dataset name to be deleted.
 
     try:
@@ -158,21 +158,21 @@ Delete entire data of a dataset
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DatasetsApi(api_client)
+    api_instance = cfx_rda_api.DatasetsApi(api_client)
     name = 'name_example' # str | Name of the dataset
 
     try:
@@ -224,21 +224,21 @@ Delete dataset rows matching the input data     All the rows in existing dataset
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DatasetsApi(api_client)
+    api_instance = cfx_rda_api.DatasetsApi(api_client)
     name = 'name_example' # str | Name of the dataset
     keys = ['keys_example'] # List[str] | Array of keys to match for updating rows
     request_body = None # List[object] | 
@@ -294,22 +294,22 @@ Get data of a dataset
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.table_report_response import TableReportResponse
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.models.table_report_response import TableReportResponse
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DatasetsApi(api_client)
+    api_instance = cfx_rda_api.DatasetsApi(api_client)
     name = 'name_example' # str | Name of the dataset
     cfxql_query = 'cfxql_query_example' # str | <a href='https://bot-docs.cloudfabrix.io/reference_guides/cfxql/'>cfxql query</a> string to filter the results (optional)
     search = 'search_example' # str | search across fields: ['name'] (optional)
@@ -371,23 +371,23 @@ Fetch meta data about datasets
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.datasets_enum import DatasetsEnum
-from openapi_client.models.table_report_response import TableReportResponse
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.models.datasets_enum import DatasetsEnum
+from cfx_rda_api.models.table_report_response import TableReportResponse
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DatasetsApi(api_client)
+    api_instance = cfx_rda_api.DatasetsApi(api_client)
     cfxql_query = 'cfxql_query_example' # str | <a href='https://bot-docs.cloudfabrix.io/reference_guides/cfxql/'>cfxql query</a> string to filter the results (optional)
     search = 'search_example' # str | search across fields: ['name', 'schema'] (optional)
     offset = 0 # int | Offset to start the results from. (optional) (default to 0)
@@ -447,21 +447,21 @@ Update (merge or replace) existing dataset data.     This function currently doe
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.DatasetsApi(api_client)
+    api_instance = cfx_rda_api.DatasetsApi(api_client)
     name = 'name_example' # str | Name of the dataset
     request_body = None # List[object] | 
     replace = False # bool | If set to true, replace the existing data with new data (optional) (default to False)

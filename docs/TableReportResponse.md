@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.table_report_response import TableReportResponse
+from cfx_rda_api.models.table_report_response import TableReportResponse
 
 # TODO update the JSON string below
 json = "{}"

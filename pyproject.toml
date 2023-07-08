@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "openapi_client"
+name = "cfx_rda_api"
 version = "1.0.0"
 description = "CloudFabrix RDA Platform API"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
@@ -7,7 +7,7 @@ license = "NoLicense"
 readme = "README.md"
 repository = "https://github.com/GIT_USER_ID/GIT_REPO_ID"
 keywords = ["OpenAPI", "OpenAPI-Generator", "CloudFabrix RDA Platform API"]
-include = ["openapi_client/py.typed"]
+include = ["cfx_rda_api/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.7"

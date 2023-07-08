@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.pstream_edit_model import PstreamEditModel
+from cfx_rda_api.models.pstream_edit_model import PstreamEditModel
 
 # TODO update the JSON string below
 json = "{}"

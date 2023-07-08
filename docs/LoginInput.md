@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.login_input import LoginInput
+from cfx_rda_api.models.login_input import LoginInput
 
 # TODO update the JSON string below
 json = "{}"

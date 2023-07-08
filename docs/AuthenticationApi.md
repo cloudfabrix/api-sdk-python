@@ -1,4 +1,4 @@
-# openapi_client.AuthenticationApi
+# cfx_rda_api.AuthenticationApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,24 +19,24 @@ Login into api server. (Run this first)
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.login_input import LoginInput
-from openapi_client.models.user_details import UserDetails
-from openapi_client.rest import ApiException
+import cfx_rda_api
+from cfx_rda_api.models.login_input import LoginInput
+from cfx_rda_api.models.user_details import UserDetails
+from cfx_rda_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = cfx_rda_api.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with cfx_rda_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthenticationApi(api_client)
-    login_input = openapi_client.LoginInput() # LoginInput | 
+    api_instance = cfx_rda_api.AuthenticationApi(api_client)
+    login_input = cfx_rda_api.LoginInput() # LoginInput | 
 
     try:
         # Login into api server. (Run this first)
